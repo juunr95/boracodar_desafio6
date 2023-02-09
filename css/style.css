@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+
+    font-family: Rubik, 'sans-serif';
+    letter-spacing: -0.02em;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+}
+
+.card {
+    max-width: 20rem;
+}
+
+.card-top, .card-middle, .card-bottom {
+    padding: 32px 32px;
+    background-color: #FFFFFF;
+
+    border-radius: 24px;
+}
+
+.card-middle {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.32);
+    border-top: 1px dashed rgba(0, 0, 0, 0.32);
+}
+
+.card-top .column {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.card-middle {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.card-top .column:nth-child(1) {
+    padding-bottom: 24px;
+}
+
+.card-top .column .flight-code {
+    text-align: left;
+}
+
+.card-top .column .date {
+    text-align: right;
+}
+
+.card-top .column span {
+    font-weight: 500;
+}
+
+.card-top .column .departure p,
+.card-top .column .arrive p {
+    font-size: 14px;
+    font-weight: 400;
+
+    color: rgba(0, 0, 0, 0.64);
+}
+
+.card-top .column .departure span,
+.card-top .column .arrive span {
+    font-size: 16px;
+    font-weight: 400;
+
+    color: rgba(0, 0, 0, 0.80);
+}
+
+.card-top .column .departure h5,
+.card-top .column .arrive h5 {
+    font-size: 40px;
+
+    line-height: 47px;
+}
+
+.card-top .column .departure {
+    text-align: left;
+}
+
+.card-top .column .arrive {
+    text-align: right;
+}
+
+.card-top .column:nth-child(2) {
+    position: relative;
+}
+
+.card-top .column .airplane {
+    margin: auto;
+}
+
+.card-middle .column .passenger {
+    text-align: left;
+}
+
+.card-middle .column .seat {
+    text-align: right;
+}
+
+.card-middle .column .seat span,
+.card-middle .column .passenger span {
+    font-weight: 500;
+}
+
+.card-bottom .info {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.card-bottom .info .qr-code {
+    padding: 4px 4px;
+    text-align: center;
+}
+
+.card-bottom .info .qr-code svg {
+    width: 160px !important;
+    height: 160px !important;
+}
+
+.boarding-info > * {
+    margin-bottom: .75rem;
+}
+
+.boarding-info p {
+    font-size: 14px;
+    font-weight: 400;
+
+    color: rgba(0, 0, 0, 0.64);
+}
+
+.boarding-info span {
+    font-size: 16px;
+    font-weight: 500;
+
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.attention {
+    padding-top: 24px;
+    text-align: center;
+}
+
+.note {
+    padding-top: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.note p {
+    font-weight: 400 !important;
+    font-size: 14px;
+    opacity: 0.64;
+}
+
+.card-title {
+    padding-bottom: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.card-title p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.boarding-time p {
+    padding-bottom: 6px;
+}
+
+.boarding-time span {
+    color: #FFFFFF;
+    gap: 8px;
+    background: #633BBC;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.qr-code p {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+.airplane svg {
+    width: 1.5em !important;
+    height: 1.5em !important;
+}
